@@ -5,23 +5,31 @@ import neighborhoodImg from "../../assets/img/brightneighborhood.jpg" ;
 
 const Home = () => {
   return (
-    <VStack border="3px solid purple"  > 
+    <VStack  > 
         
         <Center position="relative" maxH="90vh" overflow="hidden"> 
 
-            <Center position="absolute" bg="rgba(244,164,96,0.5)" padding="25px"> 
-            <Text  fontSize="7rem" color="white" fontFamily="Raleway"> We Are In This Together </Text>  
-            </Center>
+          <Center position="absolute" bg="rgba(244,164,96,0.5)" padding="25px"> 
+            <Text  fontSize={{
+            xl: "7rem",
+            lg: "5rem", 
+            md:"3rem", 
+            sm: "3rem"
+            }} color="white" fontFamily="Raleway"> We Are In This Together </Text>  
+          </Center>
         <Image src={neighborhoodImg} 
          objectFit='cover'
         />     
         
         </Center> 
-        
-        <Box padding="20px 100px">     
+ 
+        <Box padding={{
+          xl: '2rem',
+          lg: '1rem 1rem', 
+          md: '1rem 1rem', 
+          sm: '1rem 1rem'
+        }}>     
         <CardList />   
-
-
         </Box>
 
       

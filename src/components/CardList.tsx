@@ -11,10 +11,13 @@ const CardList = () => {
         xl: 3,
         lg: 3, 
         md: 2,
-        sm: 1,
+        sm: 2,
         
-    }}  border="3px solid red" spacing="8"> 
-        <Card>
+    }}  spacing="5"
+    
+    padding="0 1rem"
+    > 
+        <Card bg="rgba(244,164,96,0.2)" >
             <CardBody>
             <Image src={educationImg} /> 
             <Heading> Education</Heading>
@@ -23,7 +26,7 @@ const CardList = () => {
              <Divider /> 
         </Card>
 
-        <Card>
+        <Card bg="rgba(244,164,96,0.2)">
             <CardBody>
             <Image src={economicsImg} /> 
             <Heading> Economics & Arts</Heading>
@@ -32,7 +35,7 @@ const CardList = () => {
              <Divider /> 
         </Card>
 
-        <Card>
+        <Card bg="rgba(244,164,96,0.2)">
             <CardBody>
             <Image src={environmentImg} /> 
             <Heading>Environment</Heading>
