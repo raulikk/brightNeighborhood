@@ -1,28 +1,24 @@
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem, Stack } from '@chakra-ui/react'
 
 import Main from './components/Main'
 import Footer from './components/Footer'
-import NavBar from './components/navBar/NavBar'
+import Header from './components/header/Header'
+import Home from './components/pages/Home'
 
 function App() {
 
 
   return (
   
-    <Grid  templateAreas={`"nav" "main" "footer"`} w="100vw">
-      <GridItem area="nav" bg="coral">
-        <NavBar /> 
-      </GridItem>
-      
-      <GridItem area="main" bg="green">
-        <Main /> 
-      </GridItem>
-      
-      <GridItem area="footer" bg="yellow">
-        <Footer/>
-      </GridItem>
-  
-    </Grid>
+    <Stack > 
+
+    <Header/> 
+
+    <Home/> 
+
+    <Footer /> 
+
+    </Stack>
    
   )
 }
