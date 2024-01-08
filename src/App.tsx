@@ -3,7 +3,7 @@ import { Grid, GridItem, Stack } from '@chakra-ui/react'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Header from './components/header/Header'
-import Home from './components/pages/Home'
+import HomePage from './components/pages/HomePage'
 
 function App() {
 
@@ -12,9 +12,9 @@ function App() {
   
     <Stack > 
 
-    <Header/> 
+<Header/> 
 
-    <Home/> 
+    <HomePage/> 
 
     <Footer /> 
 

@@ -3,7 +3,7 @@ import React from 'react'
 import CardList from '../CardList'
 import neighborhoodImg from "../../assets/img/brightneighborhood.jpg" ; 
 
-const Home = () => {
+const HomePage = () => {
   return (
     <VStack  > 
         
@@ -41,4 +41,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

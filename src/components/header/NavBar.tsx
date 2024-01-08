@@ -2,11 +2,20 @@ import { Flex ,Text, HStack, Box, Stack } from '@chakra-ui/react'
 import React from 'react'
 import Logo from './Logo'
 import { wrap } from 'framer-motion'
-const NavBar = () => {
+
+interface Props { 
+
+  visibility: boolean; 
+
+
+}
+
+const NavBar = ({visibility}: Props) => {
+
   return (<Flex  
-    
+    transform= {visibility ? "translateY(-100vh )" : "translateY(0)"}
     bg="green" 
-     opacity="1.2" 
+     opacity="0.7" 
      position="fixed" 
      h="100vh" 
      w="100vw"

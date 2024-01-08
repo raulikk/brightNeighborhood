@@ -1,11 +1,23 @@
-import {  } from '@chakra-ui/react'
+import { useState } from 'react';
 import { Box, Icon, Text } from '@chakra-ui/react'
 import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 
-const MenuIcon = () => {
+interface Props { 
+  visibility : boolean
+  onClick : () => void;
+}
+
+const MenuIcon = ( {visibility,onClick} : Props) => {
+
+ 
+
+  
   return (
-    <Box position={'fixed'} zIndex={9999}  right={0} margin={5}>
-    <Icon boxSize={10} as={IoMenu} />
+    <Box position={'fixed'} zIndex={9999}  right={0} margin={5} 
+     onClick={onClick}
+    >
+    <Icon boxSize={10} as={visibility?  IoMenu : IoMdClose} />
     </Box>
     
   )
