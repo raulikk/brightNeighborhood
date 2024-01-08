@@ -1,4 +1,4 @@
-import { SimpleGrid, Card, CardBody, Text,Image, Heading, Divider } from '@chakra-ui/react'
+import { SimpleGrid, Card, CardBody, Text,Image,Heading, Divider } from '@chakra-ui/react'
 import React from 'react'
 
 import educationImg from "../assets/img/education.jpg"
