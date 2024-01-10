@@ -1,4 +1,4 @@
-import { HStack, VStack, Flex, Stack, Image, Box, Heading, Text } from '@chakra-ui/react'
+import { HStack, VStack, Flex, Stack, Image, Box, Heading, Text, Accordion, AccordionButton,AccordionItem,AccordionPanel, AccordionIcon, } from '@chakra-ui/react'
 import React from 'react'
 import aboutImage from "../../assets/img/economics.jpg"
 const AboutPage = () => {
@@ -59,6 +59,16 @@ const AboutPage = () => {
         </Stack>
 
       </Flex>
+
+ {/* Faq Here */}
+
+
+        
+  
+
+
+
+    
 
 
 
