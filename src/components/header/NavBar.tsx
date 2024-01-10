@@ -1,7 +1,11 @@
-import { Flex ,Text, HStack, Box, Stack } from '@chakra-ui/react'
+import { Flex ,Text, HStack, Box, Stack, Link as ChakraLink } from '@chakra-ui/react'
 import React from 'react'
 import Logo from './Logo'
 import { wrap } from 'framer-motion'
+
+import { Link as ReactRouterLink, useLocation} from "react-router-dom"; 
+
+
 
 interface Props { 
 
@@ -11,6 +15,15 @@ interface Props {
 }
 
 const NavBar = ({visibility}: Props) => {
+
+
+  const navRoutes = [ 
+    {id:1, name:"Home", to:"/"},
+    {id:2, name:"About", to:"/about"},
+    {id:3, name:"Contact", to:"/contact"},
+    ]
+
+
 
   return (<Flex  
     transform= {visibility ? "translateY(-100vh )" : "translateY(0)"}
@@ -65,9 +78,8 @@ const NavBar = ({visibility}: Props) => {
 
 
       <Flex 
-      
+    
 
-  
       direction={{
         xl:"row", 
         lg: "row",  
@@ -77,9 +89,21 @@ const NavBar = ({visibility}: Props) => {
       }}
       alignItems="center"
        gap={6}>  
-        <Text fontSize="1rem"> Home </Text>
-        <Text fontSize="1rem"> About </Text>
-        <Text fontSize="1rem"> Contact </Text>
+
+      {navRoutes.map( route => ( 
+
+    <ChakraLink  as={ReactRouterLink}  
+    key={route.id} 
+    to={route.to}> 
+
+<Text fontSize="1rem"> {route.name}</Text>
+
+    </ChakraLink>
+
+      ))}
+
+
+
       </Flex>
   
     </Flex> )

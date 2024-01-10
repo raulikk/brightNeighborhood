@@ -4,6 +4,7 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 import Header from './components/header/Header'
 import HomePage from './components/pages/HomePage'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
@@ -12,9 +13,9 @@ function App() {
   
     <Stack > 
 
-<Header/> 
+   <Header/> 
 
-    <HomePage/> 
+    <Outlet />
 
     <Footer /> 
 
