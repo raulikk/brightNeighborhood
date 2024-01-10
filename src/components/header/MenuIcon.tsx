@@ -17,7 +17,7 @@ const MenuIcon = ( {visibility,onClick} : Props) => {
     <Box position={'fixed'} zIndex={9999}  right={0} margin={5} 
      onClick={onClick}
     >
-    <Icon boxSize={10} as={visibility?  IoMenu : IoMdClose} />
+    <Icon boxSize={10} as={visibility? IoMdClose : IoMenu} />
     </Box>
     
   )

@@ -26,13 +26,20 @@ const NavBar = ({visibility}: Props) => {
 
 
   return (<Flex  
-    transform= {visibility ? "translateY(-100vh )" : "translateY(0)"}
+    transform= { 
+      { 
+     xl:"inherit",
+     lg:" inherit",
+     md:visibility ? "translateY(0)" : "translateY(-100vh)",
+     sm: visibility ? "translateY(0)" : "translateY(-100vh)",
+     base: visibility ? "translateY(0)" : "translateY(-100vh)"
+      }}
     bg= {{ 
     xl:"inherit", 
     lg:"inherit",  
-    md: "rgba(244,244,244,244)",
-    sm:"gray",
-    base:"gray"
+    md:  "#F4A460",
+    sm:"#F4A460",
+    base:"#F4A460"
 
 
     }}
@@ -96,7 +103,23 @@ const NavBar = ({visibility}: Props) => {
     key={route.id} 
     to={route.to}> 
 
-<Text fontSize="1rem"> {route.name}</Text>
+<Text 
+
+
+fontSize={{ 
+  xl:"1rem",
+  lg:"1rem", 
+  md: "5rem",
+  sm:"5rem",
+  base:"2rem"
+
+}}
+ 
+fontFamily="Raleway" 
+fontWeight="regular"
+color= "white"
+
+ > {route.name}</Text>
 
     </ChakraLink>
 
