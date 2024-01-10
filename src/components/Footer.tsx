@@ -1,6 +1,7 @@
 import { Flex, VStack, Text, Stack, Image, Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 import Logo from './header/Logo'
+import { IoIosArrowUp } from "react-icons/io";
 import footerLogo from '../assets/logo/bnLogoHorizontal.svg'
 const Footer = () => {
   return (
@@ -27,14 +28,15 @@ const Footer = () => {
    
    w="100vw" h="250px">
     
-    <Box position="absolute" right="2.5rem" top="0" border="1px solid gray" padding="5px" > 
+    <Box  position="absolute" right="2.5rem" top="0" border="1px solid gray" padding="5px" > 
     <Text>Move Up  </Text>  
+    <IoIosArrowUp />
     </Box> 
     <Image src={footerLogo} h="50px" w="auto"  border="2px solid coral" bg="white" /> 
     
     <Stack > 
     <Heading > 
-        Follow Us 
+      Follow Us 
     </Heading>
     <Text>Facebook</Text>
     <Text>Twitter</Text>

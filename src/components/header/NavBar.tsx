@@ -10,11 +10,11 @@ import { Link as ReactRouterLink, useLocation} from "react-router-dom";
 interface Props { 
 
   visibility: boolean; 
-
+  onClick: () => void; 
 
 }
 
-const NavBar = ({visibility}: Props) => {
+const NavBar = ({visibility, onClick}: Props) => {
 
 
   const navRoutes = [ 
@@ -45,8 +45,9 @@ const NavBar = ({visibility}: Props) => {
     }}
     
      position="fixed" 
-       h= {{ xl: "inherit", 
-    lg:"inherit", 
+     h= {{ xl: "inherit", 
+  
+     lg:"inherit", 
      md: "100vh",
      sm:"100vh", 
      base:"100vh"}} 
@@ -75,7 +76,7 @@ const NavBar = ({visibility}: Props) => {
      }} 
     padding={{ 
     
-      lg:"1rem 2.5rem",
+      lg:"1rem 5.5rem",
       md:"9rem 0", 
       sm:"9rem 0", 
       base:"9rem 0"
@@ -101,10 +102,19 @@ const NavBar = ({visibility}: Props) => {
 
     <ChakraLink  as={ReactRouterLink}  
     key={route.id} 
-    to={route.to}> 
+    to={route.to}
+    
+    onClick={onClick}
 
+    _hover={{ textDecoration: "none" }}
+    > 
+
+<Box padding="10px 20px" 
+
+bg="#F4A460"
+borderRadius="50px"
+> 
 <Text 
-
 
 fontSize={{ 
   xl:"1rem",
@@ -117,10 +127,17 @@ fontSize={{
  
 fontFamily="Raleway" 
 fontWeight="regular"
-color= "white"
+color= {{
+  xl:"black", 
+  lg:"black",
+  md: "white", 
+  sm:"white", 
+  base:" white"
+
+}}
 
  > {route.name}</Text>
-
+  </Box>
     </ChakraLink>
 
       ))}
