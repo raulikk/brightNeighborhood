@@ -1,4 +1,4 @@
-import { Box, HStack, Image,Text, Stack, Flex, Hide } from '@chakra-ui/react'
+import { Box, HStack, Image,Text, Stack, Flex, Hide, Show } from '@chakra-ui/react'
 import { useState } from 'react'
 import Logo from './Logo'
 import NavBar from './NavBar'
@@ -15,9 +15,9 @@ const Header = () => {
     <Logo /> 
     <NavBar visibility={menuVisibility} onClick= {() => setMenuVisibility(false)} /> 
     
-  <Hide above='lg'>
+  <Show below='lg'>
     <MenuIcon  visibility={menuVisibility} onClick={() => setMenuVisibility(!menuVisibility)} /> 
-  </Hide>  
+  </Show>  
     </Box>
   )
 }
