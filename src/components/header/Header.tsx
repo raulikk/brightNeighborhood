@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Box position="fixed" h="80px" w="100%" bg="rgba(255, 255,255,0.6)" zIndex="99"  > 
    
-    <Logo /> 
+    <Logo menuOn={menuVisibility} /> 
     <NavBar visibility={menuVisibility} onClick= {() => setMenuVisibility(false)} /> 
     
   <Show below='lg'>
