@@ -1,4 +1,4 @@
-import { Flex, VStack, Text, Stack, Image, Box, Heading } from '@chakra-ui/react'
+import { Flex, VStack, Text, Stack, Image, Box, Heading, Icon, HStack } from '@chakra-ui/react'
 import React from 'react'
 import Logo from './header/Logo'
 import { IoIosArrowUp } from "react-icons/io";
@@ -28,10 +28,10 @@ const Footer = () => {
    
    w="100vw" h="250px">
     
-    <Box  position="absolute" right="2.5rem" top="0" border="1px solid gray" padding="5px" > 
-    <Text>Move Up  </Text>  
-    <IoIosArrowUp />
-    </Box> 
+    <HStack  position="absolute" right="2.5rem" top="-1"  border="1px solid white" color="white"padding="5px" opacity="0.8" > 
+    <Text >Move Up  </Text>  
+    <Icon as={IoIosArrowUp} />
+    </HStack> 
     <Image src={footerLogo} h="50px" w="auto"  border="2px solid coral" bg="white" /> 
     
     <Stack > 

@@ -23,8 +23,9 @@ const NavBar = ({visibility, onClick}: Props) => {
     {id:3, name:"Contact", to:"/contact"},
     ]
 
-
-
+  
+    const location = useLocation();
+    console.log(location)
   return (<Flex  
     transform= { 
       { 
@@ -34,6 +35,7 @@ const NavBar = ({visibility, onClick}: Props) => {
      sm: visibility ? "translateY(0)" : "translateY(-100vh)",
      base: visibility ? "translateY(0)" : "translateY(-100vh)"
       }}
+
     bg= {{ 
     xl:"inherit", 
     lg:"inherit",  
@@ -61,6 +63,7 @@ const NavBar = ({visibility, onClick}: Props) => {
       base: "center"
     }}
     justifyContent= {{ 
+      xl:"end",
       lg:"end", 
       md:"center", 
       sm:"center", 
@@ -71,6 +74,7 @@ const NavBar = ({visibility, onClick}: Props) => {
       xl:"inherit", 
       lg:"inherit", 
       md:"scroll",
+      sm:"scroll",
       base:"scroll"
 
      }} 
@@ -86,8 +90,6 @@ const NavBar = ({visibility, onClick}: Props) => {
 
 
       <Flex 
-    
-
       direction={{
         xl:"row", 
         lg: "row",  
@@ -96,7 +98,7 @@ const NavBar = ({visibility, onClick}: Props) => {
         base:"column"
       }}
       alignItems="center"
-       gap={6}>  
+      gap={6}>  
 
       {navRoutes.map( route => ( 
 
@@ -106,35 +108,38 @@ const NavBar = ({visibility, onClick}: Props) => {
     
     onClick={onClick}
 
-    _hover={{ textDecoration: "none" }}
+    _hover={
+     
+      { textDecoration: "none"}}
     > 
 
 <Box padding="10px 20px" 
 
-bg="#F4A460"
+bg={ {
+  xl: location.pathname===route.to ? "#F4A460": ""  ,
+  lg: location.pathname===route.to ? "#F4A460": "" , 
+  base: location.pathname===route.to ? "white": "" 
+}}
+
 borderRadius="50px"
+_hover={ { 
+  bg:"coral"
+}}
 > 
 <Text 
 
 fontSize={{ 
   xl:"1rem",
   lg:"1rem", 
-  md: "5rem",
-  sm:"5rem",
+  md: "3rem",
+  sm:"3rem",
   base:"2rem"
 
 }}
  
 fontFamily="Raleway" 
 fontWeight="regular"
-color= {{
-  xl:"black", 
-  lg:"black",
-  md: "white", 
-  sm:"white", 
-  base:" white"
-
-}}
+color="black"
 
  > {route.name}</Text>
   </Box>

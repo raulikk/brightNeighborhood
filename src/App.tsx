@@ -1,4 +1,4 @@
-import { Grid, GridItem, Stack } from '@chakra-ui/react'
+import { Grid, GridItem, Stack, Box } from '@chakra-ui/react'
 
 import Main from './components/Main'
 import Footer from './components/Footer'
@@ -13,10 +13,10 @@ function App() {
   
     <Stack > 
 
-   <Header/> 
+   <Header /> 
 
     <Outlet />
-
+  
     <Footer /> 
 
     </Stack>

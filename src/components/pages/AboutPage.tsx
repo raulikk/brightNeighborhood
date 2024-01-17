@@ -36,8 +36,8 @@ const AboutPage = () => {
         sm:"column", 
         base:"column"
       }}> 
-        <Box overflow="hidden"> 
-        <Image src={aboutImage}  /> 
+        <Box overflow="hidden" w="100%"> 
+        <Image src={aboutImage}    /> 
         </Box> 
         <Stack> 
            { aboutContent.paragraphs.map( (paragraph) => ( 
