@@ -8,7 +8,7 @@ const HomePage = () => {
     <VStack  > 
         
    
-    <Center bg="green" h="80vh" w="100%" position="relative" > 
+    <Center h="80vh" w="100%" position="relative" > 
     
     
     <Box  
