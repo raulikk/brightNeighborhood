@@ -2,7 +2,7 @@ import { Flex, VStack, Text, Stack, Image, Box, Heading, Icon, HStack } from '@c
 import React from 'react'
 import Logo from './header/Logo'
 import { IoIosArrowUp } from "react-icons/io";
-import footerLogo from '../assets/logo/bnLogoHorizontal.svg'
+import footerLogo from '../assets/logo/brightNeighborhoodHorizontalWhite.svg'
 const Footer = () => {
   return (
    <Flex
@@ -32,9 +32,15 @@ const Footer = () => {
     <Text >Move Up  </Text>  
     <Icon as={IoIosArrowUp} />
     </HStack> 
-    <Image src={footerLogo} h="50px" w="auto"  border="2px solid coral" bg="white" /> 
+    <Image src={footerLogo} h="70px" w="auto"   /> 
     
-    <Stack > 
+    <Stack marginRight={{
+      xl:"5rem",
+      lg:"5rem", 
+      md:"inherit",
+      sm:"inherit",
+      base:"inherit"
+    }}> 
     <Heading > 
       Follow Us 
     </Heading>

@@ -1,7 +1,7 @@
 import { VStack, Center, Box, Text,Image, SimpleGrid, Heading } from '@chakra-ui/react'
 import React from 'react'
 import CardList from '../CardList'
-import neighborhoodImg from "../../assets/img/brightneighborhood.jpg" ; 
+import neighborhoodImg from "../../assets/img/brightneighborhood2.webp" ; 
 
 const HomePage = () => {
   return (
