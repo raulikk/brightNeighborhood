@@ -1,4 +1,4 @@
-import { Box, HStack, Image,Text, Stack, Flex, Hide, Show } from '@chakra-ui/react'
+import { Box, Show } from '@chakra-ui/react'
 import { useState } from 'react'
 import Logo from './Logo'
 import NavBar from './NavBar'
