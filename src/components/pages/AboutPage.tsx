@@ -1,4 +1,4 @@
-import { HStack, VStack, Flex, Stack, Image, Box, Heading, Text, Accordion, AccordionButton,AccordionItem,AccordionPanel, AccordionIcon, } from '@chakra-ui/react'
+import { HStack, VStack, Flex, Stack, Image, Box, Heading, Text, Accordion, AccordionButton,AccordionItem,AccordionPanel, AccordionIcon, SimpleGrid, } from '@chakra-ui/react'
 import React from 'react'
 import aboutImage from "../../assets/img/economics.jpg"
 const AboutPage = () => {
@@ -27,40 +27,57 @@ const AboutPage = () => {
  
  
     return (
-    <VStack > 
+    <VStack position="relative" marginTop={{
+        xl:"90px",
+        lg: "80px", 
+        md: "inherit",
+        sm:"inherit",
+        base:"inherit"
 
- 
-      <Flex direction={{
-        xl:"row", 
-        md:"column",
-        sm:"column", 
-        base:"column"
-      }}> 
-        <Box overflow="hidden" w="100%"> 
-        <Image src={aboutImage}    /> 
-        </Box> 
-        <Stack> 
-           { aboutContent.paragraphs.map( (paragraph) => ( 
-                <Box key={paragraph.id}>  
-                    <Heading > 
-                        {paragraph.heading} 
-                    </Heading>
+    }}
+     
+     padding={{
+        xl:"0 5rem",
+        lg:"0 4rem",
+        md:"inherit", 
+        sm:"inherit"
+     }}
+     > 
 
-                    <Text> 
+       <SimpleGrid columns={{
+        xl:2,
+        lg:2, 
+        md:1,
+        sm:1,
+        base:1
+       }} 
+       
+       spacing={1}> 
 
-                        {paragraph.text}
-                    </Text>
-                
-                </Box>
+            <Box bg="50"> 
+            <Image src={aboutImage} /> 
+            </Box>
+
+            <VStack  padding="1rem">
+               {
+                aboutContent.paragraphs.map( (paragraph) => (
+                    <Box key={paragraph.id}  maxW="50ch"> 
+                        <Heading > {paragraph.heading}</Heading>
+                        <Text> {paragraph.text}</Text>
+                    </Box> 
 
 
-            ) )  
-           }
-        </Stack>
+                ))
 
-      </Flex>
 
- {/* Faq Here */}
+               }
+            </VStack>
+        
+        </SimpleGrid> 
+
+          
+    
+
 
 
         
