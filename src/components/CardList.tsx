@@ -1,9 +1,9 @@
 import { SimpleGrid, Card, CardBody, Text,Image,Heading, Divider, Stack, CardFooter, Button } from '@chakra-ui/react'
 import React from 'react'
 
-import educationImg from "../assets/img/education.jpg"
-import economicsImg from "../assets/img/economics.jpg"
-import environmentImg from "../assets/img/environment.jpg" 
+import educationImg from "../assets/img/education.webp"
+import economicsImg from "../assets/img/economics.webp"
+import environmentImg from "../assets/img/environment.webp" 
 
 const CardList = () => {
   const cardsContents= [
