@@ -1,4 +1,4 @@
-import { Flex, Stack, Heading, Text,Box } from '@chakra-ui/react'
+import { Flex, Stack, Heading, Text,Box, Highlight } from '@chakra-ui/react'
 import React from 'react'
 
 const ContactPage = () => {
@@ -10,17 +10,29 @@ const ContactPage = () => {
       sm: "column",
       base:"column"
     }}
-     padding="6rem 6rem"
+     padding={{
+
+      base:"5rem 2rem"
+
+
+     }}
      h="70vh"
      > 
 
     <Stack>
-      <Heading> Contact us </Heading>
+      <Heading color='#F4A460'> Contact us </Heading>
 
-      <Text> phone: 999-9999</Text>
-      <Text> email: brightneighborhood@gmail.com</Text>
+    
+   <Text> <Highlight query="phone" styles={{ px: '2', py: '1', rounded: 'full', bg: '#F4A460' }}> phone: +1 (999)-9999 </Highlight> </Text>
+    <Text> 
+        <Highlight query="email" styles={{ px: '2', py: '1', rounded: 'full', bg: '#F4A460' }}> 
+        email: brightneighborhood@gmail.com
+        </Highlight>  
+        </Text>
 
-      <Text maxW="60ch"> This temporary camp, where the tents have retractable roofs for stargazing, is a luxurious placeholder for a more permanent property from the operator Wilderness that is due to open in 2026.Mainly I need  about and the mission parts , these are the most important sections.  All they care is  What is Bright Neighborhood and What it does Mainly I need  about and the mission parts , these are the most important sections.  All they care is  What is Bright Neighborhood and What it does </Text>
+        
+
+      <Text maxW="50ch"> Thank you for visiting our website and learning more about our organization. As  Bright Neighborhood family, we are dedicated to making a positive impact in our community and we couldn't do it without the support of people like you. </Text>
 
     </Stack>
     

@@ -64,13 +64,13 @@ const CardList = () => {
 
 
     {  cardsContents.map( (content) => (
-      <Card key={content.id} bg="#F4A460"> 
+      <Card key={content.id} bg="#F4A460" overflow='hidden' borderRadius="20px"> 
 
-        <CardBody overflow="hidden"> 
+        <CardBody overflow="hidden" padding='0'> 
 
           <Image src={content.imageUrl}  w="100%" /> 
 
-          <Stack mt="4" spacing={2}> 
+          <Stack mt="4" spacing={2} padding='0 1rem'> 
           <Heading color="white">{content.heading} </Heading>
           <Text>{content.text}</Text>
 
@@ -78,14 +78,7 @@ const CardList = () => {
     
         </CardBody>
      
-          <CardFooter  
-          justify='end'
-          >
-            <Button > More...</Button>
-
-
-
-          </CardFooter>
+          
 
       </Card>
 
