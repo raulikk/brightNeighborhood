@@ -1,7 +1,5 @@
 
-import React from 'react'
-
-import { Box,Link as ChakraLink, Text, HStack } from '@chakra-ui/react'
+import { Box,Link as ChakraLink } from '@chakra-ui/react'
 import { Link as ReactRouterLink} from "react-router-dom"; 
 
 interface Props { 

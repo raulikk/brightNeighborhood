@@ -1,5 +1,4 @@
-import { HStack, VStack, Flex, Stack, Image, Box, Heading, Text, Accordion, AccordionButton,AccordionItem,AccordionPanel, AccordionIcon, SimpleGrid, } from '@chakra-ui/react'
-import React from 'react'
+import { VStack, Image, Box, Heading, Text, SimpleGrid, } from '@chakra-ui/react'
 import aboutImage from "../../assets/img/economics.webp"
 const AboutPage = () => {
     

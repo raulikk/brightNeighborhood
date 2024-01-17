@@ -1,5 +1,4 @@
 import { Flex, Stack, Heading, Text,Box, Highlight } from '@chakra-ui/react'
-import React from 'react'
 
 const ContactPage = () => {
   return (

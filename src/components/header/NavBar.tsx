@@ -1,8 +1,4 @@
-import { Flex ,Text, HStack, Box, Stack, Link as ChakraLink } from '@chakra-ui/react'
-import React from 'react'
-import Logo from './Logo'
-import { wrap } from 'framer-motion'
-
+import { Flex ,Text, Box, Link as ChakraLink } from '@chakra-ui/react';
 import { Link as ReactRouterLink, useLocation} from "react-router-dom"; 
 
 

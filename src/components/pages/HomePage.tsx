@@ -1,5 +1,5 @@
-import { VStack, Center, Box, Text,Image, SimpleGrid, Heading } from '@chakra-ui/react'
-import React from 'react'
+import { VStack, Center, Box,Image, Heading } from '@chakra-ui/react'
+
 import CardList from '../CardList'
 import neighborhoodImg from "../../assets/img/brightneighborhood2.webp" ; 
 

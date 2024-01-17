@@ -1,6 +1,4 @@
-import { Flex, VStack, Text, Stack, Image, Box, Heading, Icon, HStack } from '@chakra-ui/react'
-import React from 'react'
-import Logo from './header/Logo'
+import { Flex, Text, Stack, Image, Heading, Icon, HStack } from '@chakra-ui/react'
 import { IoIosArrowUp } from "react-icons/io";
 import footerLogo from '../assets/logo/brightNeighborhoodHorizontalWhite.svg'
 const Footer = () => {
