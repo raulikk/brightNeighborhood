@@ -24,7 +24,7 @@ const CardList = () => {
     id:3, 
     imageUrl: environmentImg ,
     heading: 'Environment', 
-    text:'Our goal is to used the Main Street model where we can create a place where people work, live, and play. We know that economic life serves as an entry-point to fulfill the daily needs of local residents, and helps catalyze tourism. Bright Neighborhood CDC’s strategic support revolves around a comprehensive, culturally specific and creative approach that integrates people, place, and storytelling that promotes a healthy, economically and culturally vibrant neighborhood.' ,
+    text:'Established in 2020, Chicago Water Alliance(CWA) seeks to advocate for clean and affordable water in low-income neighborhoods. Also, we would like to create economic and job-creating potential while urging greater care of our precious supply of water.' ,
    }
   
   
@@ -70,7 +70,14 @@ const CardList = () => {
 
           <Stack mt="4" spacing={2} padding='0 1rem'> 
           <Heading color="white">{content.heading} </Heading>
-          <Text>{content.text}</Text>
+          <Text fontSize={{
+            xl:"1.2rem",
+            lg:"1.1rem",
+            md:"1.1rem",
+            sm:"1rem",
+            base:"1rem"
+          }}
+          >{content.text}</Text>
 
           </Stack>
     

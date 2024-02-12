@@ -5,12 +5,10 @@ import { SiEventbrite } from "react-icons/si";
 
 const EventItem = () => {
   return (
-    <Card bg="coral"  
-    
+    <Card bg="#F4A460"  
     overflow="hidden"
-
     minWidth={"20rem"}
-   
+    maxWidth={"40rem"}
     borderRadius={"25px"}
     > 
     <CardBody padding={0}> 
@@ -27,7 +25,10 @@ const EventItem = () => {
        </Heading>
         <Text 
         fontSize={{
-            xl:"2rem" ,
+            xl:"2rem",  
+            lg:"1.5rem",
+            md:"1.3rem",
+            sm:"1.2rem", 
             base:"1.5rem" 
         }}
         >February 28th, 5pm- 6pm </Text>
@@ -40,9 +41,13 @@ const EventItem = () => {
            <Flex w="100%"  justifyContent={"end"}> 
                 <HStack> 
                    
-                    <Button bg="none" border={"1px solid white"} borderRadius={"25px"} > 
-                     Learn More 
-                     <Icon as={SiEventbrite}  marginLeft="5px" />
+                    <Button 
+                        bg="none"  
+                        border="1px solid white"
+                        borderRadius={"25px"
+                    }
+                    > Learn More 
+                        <Icon as={SiEventbrite}  marginLeft="5px" />
                     </Button>
                 </HStack>
             </Flex>

@@ -22,18 +22,18 @@ const EventPage = () => {
       sm: 1, 
       base:1
 
-    }} gap="4"  border={"2px solid green"}> 
+    }} gap="4" > 
     
     <EventItem /> 
-    <EventItem />   
     <EventItem /> 
+ 
     
     
    
 
 
     </SimpleGrid>
-    <Text> https://www.eventbrite.com/e/lets-discuss-lead-in-our-water-tickets-817558317937?aff=oddtdtcreator</Text>
+   
    
    
    
