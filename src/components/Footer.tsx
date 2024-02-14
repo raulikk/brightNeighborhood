@@ -1,6 +1,8 @@
-import { Flex, Text, Stack, Image, Heading, Icon, HStack } from '@chakra-ui/react'
+import { Flex, Text, Stack, Image, Heading, Icon, HStack, Link as ChakraLink } from '@chakra-ui/react'
+
 import { IoIosArrowUp } from "react-icons/io";
 import footerLogo from '../assets/logo/brightNeighborhoodHorizontalWhite.svg'
+
 const Footer = () => {
   return (
    <Flex
@@ -25,12 +27,9 @@ const Footer = () => {
    }}
    
    w="100vw" h="250px">
-    
-    <HStack  position="absolute" right="2.5rem" top="-1"  border="1px solid white" color="white"padding="5px" opacity="0.8" > 
-    <Text >Move Up  </Text>  
-    <Icon as={IoIosArrowUp} />
-    </HStack> 
-    <Image src={footerLogo} h="70px" w="auto"   /> 
+
+   
+    <Image src={footerLogo} h="70px" w="auto"/> 
     
     <Stack marginRight={{
       xl:"5rem",
@@ -42,9 +41,14 @@ const Footer = () => {
     <Heading > 
       Follow Us 
     </Heading>
+    <ChakraLink href='https://www.facebook.com/groups/1044398359989116'  _hover={{textDecoration:'none', color:'white'}}>
     <Text>Facebook</Text>
-    <Text>Twitter</Text>
-    <Text>Instagram</Text>
+    </ChakraLink>
+    <ChakraLink href='https://twitter.com/brightn2020' _hover={{textDecoration:'none', color:'white'}}>
+      <Text >Twitter / X</Text>
+    </ChakraLink>
+    
+    
 
     </Stack>
    </Flex>

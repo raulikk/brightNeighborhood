@@ -17,12 +17,7 @@ const AboutPage = () => {
             text: "The values of respect, compassion, empowerment, and teamwork represent the core principles we stand for and believe in at Bright Neighborhood CDC. Ours is a place-based organization that treats each person with compassion and respect. We build a powerful coalition of advocates and supporters who contribute their own voices in the community. We strengthen community through teamwork and encourage people to learn, and to share ideas and knowledge across all communities and within Bright Neighborhood CDC."
         },
 
-        {id:3 ,
-        heading: "Environment",   
-            text: ` 
-            Established in 2020, Chicago Water Alliance(CWA) seeks to advocate for clean and affordable water in low-income neighborhoods. Also, we would like to create economic and job-creating potential while urging greater care of our precious supply of water. 
-            `
-        }],
+       ],
 
         
         questions:  [ 
@@ -70,6 +65,7 @@ const AboutPage = () => {
             <VStack  padding="1rem">
                {
                 aboutContent.paragraphs.map( (paragraph) => (
+                
                     <Box key={paragraph.id}  maxW="50ch"> 
                         <Heading color="#F4A460" > {paragraph.heading}</Heading>
                         <Text> {paragraph.text}</Text>

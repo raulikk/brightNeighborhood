@@ -1,4 +1,4 @@
-import { HStack, VStack, Center, Box,Image,Text, Heading, Icon, Button, background } from '@chakra-ui/react'
+import { VStack, Center, Box,Image,Text, Heading, Icon, Button, } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import CardList from '../CardList'
 import neighborhoodImg from "../../assets/img/environment.webp" ; 
@@ -33,7 +33,7 @@ const HomePage = () => {
             
         color="white"> We Are In This Together</Heading>
     </Box>
-    <Box position="absolute" w="100%" h="100%" bg="coral" opacity="0.3" zIndex={10}> </Box>
+    <Box position="absolute" w="100%" h="100%" bg="orange" opacity="0.2" zIndex={10}> </Box>
     <Box  h="80vh" position="absolute" w="100%" overflow="hidden" >
       <Image src={neighborhoodImg} 
         objectFit="cover"
@@ -45,43 +45,68 @@ const HomePage = () => {
       
 
     <Box 
-    bg="rgba(244,244,244,0.62)" 
+    bg="rgba(244,244,244,0.53)" 
     minW="5rem"
      
-    zIndex={100}
+    zIndex={10}
     position="absolute" 
     padding={{
       xl:"20px",
+      lg:"10px",
+      md:"10px",
+      sm:"10px",
       base:"10px"
     }}
     right={{
-      xl:"50px",
-      base:"10px"
+      xl:"30px",
+      lg:"10px",
+      md:"10px", 
+      sm:"10px",
+      base:"0px"
     }} 
     bottom={{
-      xl:"50px",
+      xl:"20px",
       base:"10px"
     }}
     borderRadius="25" 
   > 
       <VStack   alignItems="left"> 
-          <Text>Event:</Text>
-          <Heading color={"brown"}>Lead In Water & The Solution</Heading>
+          <Text fontSize={{
+            xl:"1.3rem",
+            base:"1.3rem"
+          }}>event:</Text>
+          <Heading 
+          size={{
+            xl: "2xl",
+            lg:"lg",
+            md:"lg",
+            sm:"lg",
+            base:"lg"
+          }}
+          color={"black"}
+          >Lead In Water & The Solution</Heading>
           <Text 
           fontSize={{
             xl:"1.5rem",
-            base:"1rem"
-          }} fontWeight={600} >February 28th, 5pm-6pm</Text>
+            lg:"1.4rem", 
+            md:"1.4rem", 
+            sm:"1.4rem",
+            base:"1.4rem"
+          }} 
+          fontWeight={600}>February 28th, 5pm-6pm</Text>
        
-            <Button as={Link} to={"/events"} 
-            alignSelf="end"   
-            borderRadius="25px"  
-            variant='outline' 
-            _hover={{ border:"1px solid coral"}} > 
+          
+          <Button 
+          as={Link} 
+          to={"/events"} 
+          alignSelf="end"   
+          borderRadius="25px"  
+          variant='outline' 
+          _hover={{ border:"1px solid coral", color:"orange"}}> 
 
-              <Text fontSize="1.2rem">More</Text>
-              <Icon as={FaAnglesRight} />
-            </Button>
+            <Text fontSize="1.0rem">More</Text>
+            <Icon as={FaAnglesRight} />
+          </Button>
     
       </VStack>
     </Box>

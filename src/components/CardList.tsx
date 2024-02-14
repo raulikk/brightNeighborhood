@@ -68,7 +68,7 @@ const CardList = () => {
 
           <Image src={content.imageUrl}  w="100%" /> 
 
-          <Stack mt="4" spacing={2} padding='0 1rem'> 
+          <Stack mt="4" spacing={2} padding='1rem'> 
           <Heading color="white">{content.heading} </Heading>
           <Text fontSize={{
             xl:"1.2rem",

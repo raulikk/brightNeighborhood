@@ -1,7 +1,8 @@
-import {Card, CardHeader,CardBody,CardFooter, Stack, Heading, Text, Image, HStack, Icon, Divider, VStack, Button, Flex } from "@chakra-ui/react"
+import {Card, CardHeader,CardBody,CardFooter, Stack, Heading, Text, Image, HStack, Icon, Divider, VStack, Link as ChakraLink ,Button, Flex } from "@chakra-ui/react"
 import Temporary from '../assets/img/environment.webp'
 import { FaLocationDot } from "react-icons/fa6";
 import { SiEventbrite } from "react-icons/si";
+
 
 const EventItem = () => {
   return (
@@ -40,8 +41,11 @@ const EventItem = () => {
         <CardFooter padding="10px" > 
            <Flex w="100%"  justifyContent={"end"}> 
                 <HStack> 
-                   
+                <ChakraLink
+                href='https://www.eventbrite.com/e/lets-discuss-lead-in-our-water-tickets-817558317937' isExternal
+                >
                     <Button 
+                       
                         bg="none"  
                         border="1px solid white"
                         borderRadius={"25px"
@@ -49,6 +53,7 @@ const EventItem = () => {
                     > Learn More 
                         <Icon as={SiEventbrite}  marginLeft="5px" />
                     </Button>
+                </ChakraLink>
                 </HStack>
             </Flex>
 

@@ -25,7 +25,7 @@ const EventPage = () => {
     }} gap="4" > 
     
     <EventItem /> 
-    <EventItem /> 
+    
  
     
     
