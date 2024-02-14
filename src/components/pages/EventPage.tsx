@@ -1,5 +1,5 @@
-import React from 'react'
-import { SimpleGrid, Text, VStack, Box } from '@chakra-ui/react'
+
+import { SimpleGrid,VStack} from '@chakra-ui/react'
 import EventItem from '../EventItem'
 
 const EventPage = () => {

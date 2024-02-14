@@ -1,4 +1,4 @@
-import {Card, CardHeader,CardBody,CardFooter, Stack, Heading, Text, Image, HStack, Icon, Divider, VStack, Link as ChakraLink ,Button, Flex } from "@chakra-ui/react"
+import {Card,CardBody,CardFooter, Stack, Heading, Text, Image, HStack, Icon, Divider,Link as ChakraLink ,Button, Flex } from "@chakra-ui/react"
 import Temporary from '../assets/img/environment.webp'
 import { FaLocationDot } from "react-icons/fa6";
 import { SiEventbrite } from "react-icons/si";
