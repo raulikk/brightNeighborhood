@@ -1,8 +1,7 @@
-import { VStack, Center, Box,Image,Text, Heading, Icon, Button, } from '@chakra-ui/react'
-import { Link } from 'react-router-dom';
+import { VStack, Center, Box,Image, Heading } from '@chakra-ui/react'
 import CardList from '../CardList'
 import neighborhoodImg from "../../assets/img/environment.webp" ; 
-import { FaAnglesRight } from "react-icons/fa6";
+
 const HomePage = () => {
   return (
     <VStack  > 
@@ -44,72 +43,7 @@ const HomePage = () => {
 
       
 
-    <Box 
-    bg="rgba(244,244,244,0.53)" 
-    minW="5rem"
-     
-    zIndex={10}
-    position="absolute" 
-    padding={{
-      xl:"20px",
-      lg:"10px",
-      md:"10px",
-      sm:"10px",
-      base:"10px"
-    }}
-    right={{
-      xl:"30px",
-      lg:"10px",
-      md:"10px", 
-      sm:"10px",
-      base:"0px"
-    }} 
-    bottom={{
-      xl:"20px",
-      base:"10px"
-    }}
-    borderRadius="25" 
-  > 
-      <VStack   alignItems="left"> 
-          <Text fontSize={{
-            xl:"1.3rem",
-            base:"1.3rem"
-          }}>event:</Text>
-          <Heading 
-          size={{
-            xl: "2xl",
-            lg:"lg",
-            md:"lg",
-            sm:"lg",
-            base:"lg"
-          }}
-          color={"black"}
-          >Lead In Water & The Solution</Heading>
-          <Text 
-          fontSize={{
-            xl:"1.5rem",
-            lg:"1.4rem", 
-            md:"1.4rem", 
-            sm:"1.4rem",
-            base:"1.4rem"
-          }} 
-          fontWeight={600}>February 28th, 5pm-6pm</Text>
-       
-          
-          <Button 
-          as={Link} 
-          to={"/events"} 
-          alignSelf="end"   
-          borderRadius="25px"  
-          variant='outline' 
-          _hover={{ border:"1px solid coral", color:"orange"}}> 
-
-            <Text fontSize="1.0rem">More</Text>
-            <Icon as={FaAnglesRight} />
-          </Button>
-    
-      </VStack>
-    </Box>
+  
     </Center>
    
 

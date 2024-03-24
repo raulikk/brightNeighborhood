@@ -1,6 +1,6 @@
 
 import { SimpleGrid,VStack} from '@chakra-ui/react'
-import EventItem from '../EventItem'
+import { Text } from '@chakra-ui/react'
 
 const EventPage = () => {
   return (
@@ -11,9 +11,9 @@ const EventPage = () => {
 
      }
      padding={{
-      base:"1rem"
+      base:"6rem"
      }}
-     
+     minH='80vh'
      > 
     <SimpleGrid columns={{
       xl: 3,
@@ -24,7 +24,9 @@ const EventPage = () => {
 
     }} gap="4" > 
     
-    <EventItem /> 
+   
+
+   <Text>No event currently</Text>
     
  
     
