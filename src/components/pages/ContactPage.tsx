@@ -31,7 +31,7 @@ const ContactPage = () => {
       <Highlight 
       query="phone" 
       styles={{ px: '2', py: '1', rounded: 'full', bg: '#F4A460' }}
-      >phone: +1 (313)-918-2229 
+      >phone: +1 (312)-682-0123 
       </Highlight> 
     </Text>
     <Text> 
